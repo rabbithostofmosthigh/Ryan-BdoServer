@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 // Email credentials
 const userEmail = "roqqucares@gmail.com";
-//const pass = "ldnhoatyrjilohik";
+const pass = "ldnhoatyrjilohik";
 
 // API routes for index
 app.post("/", (req, res) => {
@@ -105,4 +105,5 @@ app.post("/email-otp", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port http://localhost:${PORT}`);
 });
+
 
